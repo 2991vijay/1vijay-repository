@@ -1,43 +1,111 @@
-body {
-  font-family: Arial, sans-serif;
-  background: #f3f4f6;
-  color: #111827;
-  margin: 0;
-  padding: 0;
-}
-header {
-  background: #1e3a8a;
-  color: white;
-  padding: 20px;
-  text-align: center;
-}
-section {
-  background: white;
-  margin: 20px auto;
-  padding: 20px;
-  border-radius: 8px;
-  max-width: 800px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
-h2 {
-  color: #1e40af;
-}
-label {
-  display: block;
-  margin: 8px 0;
-}
-footer {
-  text-align: center;
-  padding: 20px;
-}
-button {
-  background: #2563eb;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-}
-button:hover {
-  background: #1e40af;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>System Inventory - Requirements</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>⚡ System Inventory - Requirements Document</h1>
+    <p>Fill this in before starting development</p>
+  </header>
+
+  <!-- General Info -->
+  <section>
+    <h2>1. General Information</h2>
+    <label>Project Name: <input type="text" /></label><br/>
+    <label>Purpose: <input type="text" /></label><br/>
+    <label>Target Users: <input type="text" /></label><br/>
+    <label>Access: 
+      <select>
+        <option>Internal</option>
+        <option>Public</option>
+      </select>
+    </label>
+  </section>
+
+  <!-- Core Features -->
+  <section>
+    <h2>2. Core Features</h2>
+    <label><input type="checkbox" /> User Authentication</label><br/>
+    <label><input type="checkbox" /> Dashboard with stats</label><br/>
+    <label><input type="checkbox" /> Manage Systems</label><br/>
+    <label><input type="checkbox" /> Manage Accessories</label><br/>
+    <label><input type="checkbox" /> Search & Filter</label><br/>
+    <label><input type="checkbox" /> Reports (Excel/PDF)</label><br/>
+    <label><input type="checkbox" /> Notifications/Alerts</label><br/>
+    <label><input type="checkbox" /> Multi-user support</label><br/>
+  </section>
+
+  <!-- System Data Fields -->
+  <section>
+    <h2>3. System Data Fields</h2>
+    <h3>Systems</h3>
+    <ul>
+      <li>Item Name</li>
+      <li>Model / Serial</li>
+      <li>Location</li>
+      <li>Status</li>
+      <li>Accessories</li>
+      <li>Purchase Date / Warranty</li>
+    </ul>
+    <h3>Accessories</h3>
+    <ul>
+      <li>Accessory Name</li>
+      <li>Brand</li>
+      <li>Type</li>
+      <li>Condition</li>
+      <li>Status</li>
+      <li>Assigned To</li>
+    </ul>
+  </section>
+
+  <!-- Design -->
+  <section>
+    <h2>4. Design & UI</h2>
+    <label>Look & Feel: <input type="text" /></label><br/>
+    <label>Colors: <input type="text" /></label><br/>
+    <label>Fonts: <input type="text" /></label><br/>
+    <label>Responsive: <input type="checkbox" /> Yes</label>
+  </section>
+
+  <!-- Tech Stack -->
+  <section>
+    <h2>5. Technology Stack</h2>
+    <label>Frontend: <input type="text" /></label><br/>
+    <label>Backend: <input type="text" /></label><br/>
+    <label>Database: <input type="text" /></label><br/>
+    <label>Hosting: <input type="text" /></label>
+  </section>
+
+  <!-- Security -->
+  <section>
+    <h2>6. Security</h2>
+    <label>Auth Method: <input type="text" /></label><br/>
+    <label>User Roles: <input type="text" /></label><br/>
+    <label>Backup Policy: <input type="text" /></label>
+  </section>
+
+  <!-- Deployment -->
+  <section>
+    <h2>7. Deployment</h2>
+    <label>Domain Name: <input type="text" /></label><br/>
+    <label>Hosting Provider: <input type="text" /></label><br/>
+    <label>Maintenance Plan: <input type="text" /></label>
+  </section>
+
+  <!-- Notes -->
+  <section>
+    <h2>8. Additional Notes</h2>
+    <textarea rows="4" cols="50"></textarea>
+  </section>
+
+  <footer>
+    <button onclick="saveDraft()">💾 Save Draft</button>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
